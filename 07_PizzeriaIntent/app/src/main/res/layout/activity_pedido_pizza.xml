@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pedido"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizzeria Piero"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="53sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección:"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tvDireccionUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Elige el tamaño de tu Pizza:"
+                android:textAlignment="center"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/rgTamanio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RadioButton
+                    android:id="@+id/rBtPequena"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pizza Pequeña"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <RadioButton
+                    android:id="@+id/rBtMediana"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pizza Mediana"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <RadioButton
+                    android:id="@+id/rBtGrande"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pizza GRANDE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elige tus ingredientes:"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="60pt"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/Piña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piña"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/Alcaparras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alcaparras"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+            <CheckBox
+                android:id="@+id/Pepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperoni"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60pt"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/Pimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pimiento"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/Cebolla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cebolla"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+            <CheckBox
+                android:id="@+id/Aceitunas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceitunas"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60pt"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/Anchoas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anchoas"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/Maiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maiz"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+            <CheckBox
+                android:id="@+id/Jamon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jamon"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/hacerPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hacer pedido"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
